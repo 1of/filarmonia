@@ -1,0 +1,79 @@
+// Note: This is an example of components style, so please remove it or re-write it on your styles.
+footer{
+	height: 975px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 100%;
+	background: #565659;
+}
+footer h2 {
+color: $primary_orange;
+text-transform: uppercase;
+margin: 60px 0 60px 0;
+font-size: 3rem;
+}
+//logos
+footer .companies{
+	display: flex;
+	justify-content: center;
+	margin: 0 50px 0 50px;
+	& img:hover{
+		transform: scale(1.1);
+		border-bottom: 1px solid #fff;
+		border-top: 1px solid #fff;
+		border-radius: 5px;
+	}
+}
+
+.btn-up img{
+	transform: rotate(90deg);
+	margin-top: 115px;
+	margin-bottom: 60px;
+	transition: transform 1s;
+	&:hover{
+		filter: invert(100%);
+		transform: rotate(90deg) translateX(-30px);	
+	}
+}
+.f-text, .adress, .phone, .email, .email-b, .designers{
+color: #fff;
+font-size: 2rem;
+	& a{
+		color: #fff;
+	}
+	&.f-text{
+		text-transform: uppercase;
+		font-weight: bold;
+		font-size: 2.4rem;
+	}
+	&.email-b{
+	font-weight: bold;
+	}
+	&.designers{
+		font-size: 1.4rem;
+		font-weight: 100;
+		& span{
+			font-weight: bold;
+		}
+	}
+}
+footer .social{
+	margin: 40px 0 80px 0;
+}
+footer .social i{
+	background: $primary_lightgray;
+	color: #565659;	
+	margin-right: 5px;
+	&:hover{
+		color: $primary_orange;	
+	}
+}
+footer .social a i.fa-search {
+  font-size: 1.6rem;
+  background: transparent;
+  color: $primary_lightgray;
+  	&:hover{
+		color: $primary_orange;	
+	}
+}

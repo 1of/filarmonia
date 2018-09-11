@@ -1,0 +1,115 @@
+// Note: This is an example of components style, so please remove it or re-write it on your styles.
+
+//tablets
+@media (min-width: 480px) and (max-width: 1024px) and (orientation: landscape) {
+#nav-panel ul {
+		margin-left: 0;
+	}
+#nav-panel ul li {
+  margin-right: 5px;
+  margin-left: 5px;
+  text-align: center;
+}
+.banner {
+	  display: flex;
+	  flex-wrap: wrap;
+	  justify-content: center;
+	  height: auto;
+	  padding: 0;
+	  margin-top: 70px;
+	}
+.banner > div {
+  text-align: center;
+  width: 40%;
+}
+.flex20-1 p{
+  text-align: left;
+  display: inline-block;
+}
+.banner > div.flex30 {
+  width: 40%;
+}
+.banner > div.flex15 {
+  width: 10%;
+  text-align: right;
+}
+}
+
+
+//phones
+@media (min-width: 320px) and (max-width: 480px) {
+
+	//Hamburger
+	.banner {
+	  display: flex;
+	  flex-wrap: wrap;
+	  justify-content: center;
+	  height: auto;
+	  padding: 0;
+	  margin-top: 70px;
+	}
+	.banner div{
+		width: 50%;
+	}
+	.text-6{
+		display: none;
+	}
+	.text-4, .text-5{
+		font-size: 4.5rem;
+	}
+
+	.mobile-menu{
+		display: inline-block;
+		position: absolute;
+		top: 0;
+		font-size: 4rem;
+		padding: 15px;
+	}
+	.display-toggle{
+		display: none;
+	}
+	#nav-panel ul li {
+		width: 100%;
+		background: rgba(0,0,0,0.6);
+		margin: 0;
+
+	}
+	#nav-panel ul li{
+		padding: 15px;
+		background: rgba(255,255,255,0.95);
+		border: 1px solid #000;
+		border-radius: 5px;
+	}
+	#nav-panel ul {
+		position: absolute;
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
+		left: -25px;
+		top: 60px;
+		text-align: center;
+	}
+
+
+.support{
+	flex-direction: column;
+}
+.w-30{
+	width: 100%;	
+}
+
+.single-article{
+	flex-direction: column;
+	max-height: 520px;
+	margin: 60px 40px 60px 40px;
+}
+
+footer{
+	height: auto;
+	text-align: center;
+}
+.companies {
+	flex-direction: column;
+}
+
+}

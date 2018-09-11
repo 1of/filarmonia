@@ -1,0 +1,95 @@
+// Note: This is an example of components style, so please remove it or re-write it on your styles.
+.support{
+	display: flex;
+	justify-content: space-between;
+	padding: 0 40px 0 40px;
+	margin-top: 115px;
+}
+.support div {
+	display: flex;
+	flex-direction: column;
+	max-height: 315px;
+
+}
+.w-30{
+	width: 32%;	
+}
+.support span {
+	color: #fff;
+}
+.support p {
+	padding: 0 20px 0 20px;
+	margin: auto;
+	line-height: 0.8;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+.support img {
+	height: 100%;
+}
+.support h2 {
+	color: $primary_orange;
+	text-transform: uppercase;
+	height: 40px;
+}
+.support-txt{
+	background: #27267E;
+	color: $primary_orange;
+	font-size: 2.6rem;
+	height: 100%;
+}
+//subscribe area
+.subscribe {
+	display: block;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	margin-top: 150px;
+
+}
+.subsc-btn{
+	align-self: center;
+	margin: 25px 0 50px 45px;
+
+}
+.subsc-btn a{
+	padding: 5px 30px 5px 30px;
+	text-transform: uppercase;
+	font-weight: 600;
+	display: inline-block;
+	text-align: center;
+	&:hover {
+		color: #000;
+	}
+}
+.subsc-btn-gray{
+	color: $primary_lightgray;
+	border: 1px solid $primary_lightgray;
+	margin-right: 15px;
+	width: 138px;
+	}
+.subsc-btn-who{
+	color: $primary_orange;
+	border: 1px solid $primary_lightgray;
+	widows: 120px;
+	}
+.insta-photo{
+	margin: 25px 0 25px 0;
+	& img{
+		width: 100%;
+	}
+}
+.subscribe .social {
+	margin: auto;
+	margin-bottom: 95px;
+}
+
+.subscribe .social i {
+	height: 50px;
+	width: 50px;
+	font-size: 3rem;
+	line-height: 1.4;
+	&:hover {
+		color: $primary_orange;
+	}
+}
